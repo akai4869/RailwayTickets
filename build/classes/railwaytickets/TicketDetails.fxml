@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="railwaytickets.TicketDetailsController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="365.0" layoutY="11.0" text="PNR No:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pnrNo" layoutX="434.0" layoutY="11.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="335.0" layoutY="56.0" text="Ticket details">
+         <font>
+            <Font name="Microsoft YaHei Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="105.0" text="Train No :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="trainNo" layoutX="107.0" layoutY="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="137.0" text="Train Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="trainName" layoutX="106.0" layoutY="137.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="649.0" layoutY="107.0" text="Departure :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="649.0" layoutY="137.0" text="Arrival :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="departureTime" layoutX="734.0" layoutY="107.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="arrivalTime" layoutX="734.0" layoutY="137.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="106.0" text="From :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="137.0" text="To :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fromStation" layoutX="390.0" layoutY="107.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="toStation" layoutX="390.0" layoutY="137.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="168.0" text="Duration(hrs) :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="durationInHours" layoutX="123.0" layoutY="168.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="168.0" text="Date of Journey :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateOfJourney" layoutX="461.0" layoutY="168.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="passengerTable" layoutX="229.0" layoutY="204.0" prefHeight="200.0" prefWidth="351.0">
+         <columns>
+            <TableColumn fx:id="passengerName" prefWidth="254.0" text="Passenger Name" />
+            <TableColumn fx:id="passengerSex" minWidth="0.0" prefWidth="97.0" text="Sex" />
+         </columns>
+      </TableView>
+      <Label layoutX="300.0" layoutY="461.0" text="Happy  Journey!">
+         <font>
+            <Font name="Gabriola" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
