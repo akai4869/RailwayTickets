@@ -56,7 +56,7 @@ public class TrainQueryController implements Initializable {
                     possibleDestinations.add(destination);
                 }
             }
-
+            
             TextFields.bindAutoCompletion(fromStation, possibleSources);
             TextFields.bindAutoCompletion(toStation, possibleDestinations);
 

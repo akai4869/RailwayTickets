@@ -15,7 +15,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class TicketDetailsController implements Initializable {
-    
+
     @FXML
     private Label trainNo;
     @FXML
@@ -40,46 +40,42 @@ public class TicketDetailsController implements Initializable {
     private TableColumn<PassengerModel, String> passengerSex;
     @FXML
     private Label pnrNo;
-    
-    private String userName;
+
     private Integer pnrNoValue;
-    
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-    
+
     public void setPnrNo(Integer pnrNoValue) {
         this.pnrNoValue = pnrNoValue;
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         passengerName.setCellValueFactory(new PropertyValueFactory<>("passengerName"));
         passengerSex.setCellValueFactory(new PropertyValueFactory<>("passengerSex"));
-        
+        passengerTable.setSelectionModel(null);
+
     }
-    
+
     public void getTicketDetails() {
-        
+
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null, resultSetTrainName = null;
-        
+
         try {
-            
+
             String trainNameQuery = "SELECT train_name FROM train WHERE train_number = (SELECT train_number FROM ticket WHERE pnr_number = ?)";
             String generalInfoQuery = "SELECT train_number, source, destination, departure_time, arrival_time, duration_in_hours, date_of_journey FROM ticket WHERE pnr_number = ?";
             String passengerInfoQuery = "SELECT passenger_name, passenger_sex FROM passengers WHERE pnr_number = ?";
-            
+
             preparedStatement = DBConnection.getConnection().prepareStatement(trainNameQuery);
             preparedStatement.setInt(1, pnrNoValue);
             resultSetTrainName = preparedStatement.executeQuery();
             resultSetTrainName.next();
-            
+
             preparedStatement = DBConnection.getConnection().prepareStatement(generalInfoQuery);
             preparedStatement.setInt(1, pnrNoValue);
             resultSet = preparedStatement.executeQuery();
             resultSet.next();
-            
+
             pnrNo.setText(pnrNoValue.toString());
             Integer trainNoValue = resultSet.getInt("train_number");
             trainNo.setText(trainNoValue.toString());
@@ -91,45 +87,45 @@ public class TicketDetailsController implements Initializable {
             Integer durationInHoursValue = resultSet.getInt("duration_in_hours");
             durationInHours.setText(durationInHoursValue.toString());
             dateOfJourney.setText(resultSet.getDate("date_of_journey").toString());
-            
+
             preparedStatement = DBConnection.getConnection().prepareStatement(passengerInfoQuery);
             preparedStatement.setInt(1, pnrNoValue);
             resultSet = preparedStatement.executeQuery();
-            
+
             ObservableList<PassengerModel> passengerList = FXCollections.observableArrayList();
-            
-            while (resultSet.next()) {                
+
+            while (resultSet.next()) {
                 passengerList.add(new PassengerModel(resultSet.getString("passenger_name"), resultSet.getString("passenger_sex")));
             }
-            
+
             passengerTable.setItems(passengerList);
-            
+
         } catch (SQLException e) {
-            
+
             GetAlert.showError(e.toString());
-            
+
         } finally {
-            
+
             try {
-                
+
                 if (resultSet != null) {
                     resultSet.close();
                 }
-                
+
                 if (resultSetTrainName != null) {
                     resultSetTrainName.close();
                 }
-                
+
                 if (preparedStatement != null) {
                     preparedStatement.close();
                 }
-                
+
             } catch (SQLException e) {
                 GetAlert.showError(e.toString());
             }
-            
+
         }
-        
+
     }
-    
+
 }

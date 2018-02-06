@@ -78,7 +78,6 @@ public class BookingHistoryController implements Initializable {
         Parent root = (Parent) ticketDetailsLoader.load();
 
         TicketDetailsController ticketDetailsController = ticketDetailsLoader.<TicketDetailsController>getController();
-        ticketDetailsController.setUserName(userName);
         Integer pnrNoValue = bookedTicketTable.getSelectionModel().getSelectedItem().getPnrNo();
         ticketDetailsController.setPnrNo(pnrNoValue);
         ticketDetailsController.getTicketDetails();

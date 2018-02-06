@@ -10,15 +10,10 @@ class DBConnection {
     private static final String DB_USER_PASSWORD = "";
     private static final String CONNECTION_LINK = "jdbc:mysql://localhost/rts";
 
-
     static Connection getConnection() throws SQLException {
 
-        return DriverManager.getConnection(CONNECTION_LINK,DB_USER,DB_USER_PASSWORD);
-
+        return DriverManager.getConnection(CONNECTION_LINK, DB_USER, DB_USER_PASSWORD);
 
     }
-
-
-
 
 }
