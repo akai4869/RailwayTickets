@@ -1,2 +1,2 @@
 # RailwayTickets
-IRCTC Train Enquiry &amp; Ticket Booking
+Train Enquiry &amp; Ticket Booking
