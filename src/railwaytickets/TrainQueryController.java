@@ -148,7 +148,7 @@ public class TrainQueryController implements Initializable {
     }
 
     @FXML
-    private void onBookedTicketHistoryClick(ActionEvent event) throws IOException {
+    private void onBookedTicketHistoryClick(ActionEvent event) throws IOException  {
 
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -169,11 +169,11 @@ public class TrainQueryController implements Initializable {
                 FXMLLoader bookingHistoryLoader = new FXMLLoader(getClass().getResource("BookingHistory.fxml"));
                 Parent root = (Parent) bookingHistoryLoader.load();
 
-                BookingHistoryController bookedHistoryController = bookingHistoryLoader.<BookingHistoryController>getController();
+                BookingHistoryController bookingHistoryController = bookingHistoryLoader.<BookingHistoryController>getController();
 
-                bookedHistoryController.setUserName(userName);
-                bookedHistoryController.setBookedTicketList(bookedTicketList);
-                bookedHistoryController.setBookedTicketTable();
+                bookingHistoryController.setUserName(userName);
+                bookingHistoryController.setBookedTicketList(bookedTicketList);
+                bookingHistoryController.setBookedTicketTable();
 
                 Scene scene = new Scene(root);
 
