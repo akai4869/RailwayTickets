@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="railwaytickets.BookingHistoryController">
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railwaytickets.BookingHistoryController">
    <children>
       <AnchorPane prefHeight="41.0" prefWidth="800.0" style="-fx-background-color: #000000;">
          <children>
-            <JFXButton layoutX="710.0" layoutY="6.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="SIGN OUT">
+            <JFXButton layoutX="715.0" layoutY="6.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="Sign Out">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -32,12 +31,12 @@
             <TableColumn fx:id="noOfSeats" prefWidth="67.0" text="Seats" />
         </columns>
       </TableView>
-      <JFXButton fx:id="showDetails" layoutX="311.0" layoutY="390.0" onAction="#showDetails" prefHeight="41.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="SHOW DETAILS" textFill="WHITE">
+      <JFXButton fx:id="showDetails" layoutX="311.0" layoutY="390.0" onAction="#showDetails" prefHeight="41.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Show Details" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="305.0" layoutY="443.0" onAction="#bookAnotherTicket" prefHeight="41.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="BOOK ANOTHER TICKET" textFill="WHITE">
+      <JFXButton layoutX="305.0" layoutY="443.0" onAction="#bookAnotherTicket" prefHeight="41.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="Book Another Ticket" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

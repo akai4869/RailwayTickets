@@ -14,7 +14,7 @@
    <children>
       <AnchorPane prefHeight="41.0" prefWidth="800.0" style="-fx-background-color: #000000;">
          <children>
-            <JFXButton layoutX="710.0" layoutY="6.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="SIGN OUT">
+            <JFXButton layoutX="716.0" layoutY="7.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="Sign Out">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -119,9 +119,9 @@
       </TableView>
       <AnchorPane layoutX="10.0" layoutY="438.0" prefHeight="81.0" prefWidth="780.0" style="-fx-background-color: #E8E8E8;">
          <children>
-            <TextField fx:id="passengerNameInput" layoutX="25.0" layoutY="33.0" prefHeight="30.0" prefWidth="254.0" promptText="Passenger Name" />
-            <ComboBox fx:id="passengerSexInput" layoutX="286.0" layoutY="33.0" prefHeight="30.0" prefWidth="97.0" promptText="Sex" />
-            <JFXButton fx:id="addButton" layoutX="610.0" layoutY="29.0" onAction="#addPassengers" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #0B9A17;" text="+" textFill="WHITE">
+            <TextField fx:id="passengerNameInput" layoutX="25.0" layoutY="34.0" prefHeight="30.0" prefWidth="254.0" promptText="Passenger Name" />
+            <ComboBox fx:id="passengerSexInput" layoutX="293.0" layoutY="34.0" prefHeight="30.0" prefWidth="97.0" promptText="Sex" />
+            <JFXButton fx:id="addButton" layoutX="610.0" layoutY="29.0" onAction="#addPassengers" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #0B9A17;" text="+" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -138,7 +138,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <JFXButton fx:id="confirmButton" layoutX="331.0" layoutY="536.0" onAction="#onConfirmButtonClick" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #000000;" text="CONFIRM" textFill="WHITE">
+      <JFXButton fx:id="confirmButton" layoutX="331.0" layoutY="536.0" onAction="#onConfirmButtonClick" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #000000;" text="Confirm" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

@@ -26,7 +26,7 @@
                </font>
             </JFXTextField>
             <JFXPasswordField fx:id="password" focusColor="#20120f" labelFloat="true" layoutX="33.0" layoutY="249.0" prefHeight="25.0" prefWidth="240.0" promptText="Password" />
-            <JFXButton layoutX="34.0" layoutY="327.0" onAction="#attemptLogin" prefHeight="35.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #20120F;" text="SIGN IN" textFill="WHITE">
+            <JFXButton layoutX="34.0" layoutY="327.0" onAction="#attemptLogin" prefHeight="35.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #20120F;" text="Sign In" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></JFXButton>
@@ -46,7 +46,7 @@
             <Font size="29.0" />
          </font>
       </Label>
-      <JFXButton layoutX="69.0" layoutY="253.0" onAction="#onSignUpButtonClick" prefHeight="35.0" prefWidth="274.0" style="-fx-background-color: #FFFFFF;" text="SIGN UP">
+      <JFXButton layoutX="69.0" layoutY="253.0" onAction="#onSignUpButtonClick" prefHeight="35.0" prefWidth="274.0" style="-fx-background-color: #FFFFFF;" text="Sign Up">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

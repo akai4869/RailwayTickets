@@ -11,7 +11,7 @@
    <children>
       <AnchorPane prefHeight="41.0" prefWidth="763.0" style="-fx-background-color: #000000;">
          <children>
-            <JFXButton layoutX="673.0" layoutY="6.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="SIGN OUT">
+            <JFXButton layoutX="677.0" layoutY="6.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="Sign Out">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -27,7 +27,7 @@
             <Font size="15.0" />
          </font>
       </TextField>
-      <JFXButton layoutX="224.0" layoutY="345.0" onAction="#onGetTrainsButtonClick" prefHeight="41.0" prefWidth="316.0" style="-fx-background-color: #000000;" text="GET TRAINS" textFill="WHITE">
+      <JFXButton layoutX="224.0" layoutY="345.0" onAction="#onGetTrainsButtonClick" prefHeight="41.0" prefWidth="316.0" style="-fx-background-color: #000000;" text="Get Trains" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></JFXButton>
