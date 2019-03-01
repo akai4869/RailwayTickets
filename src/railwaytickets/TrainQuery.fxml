@@ -17,17 +17,17 @@
                </font>
             </JFXButton>
          </children></AnchorPane>
-      <TextField fx:id="fromStation" layoutX="224.0" layoutY="195.0" prefHeight="25.0" prefWidth="316.0" promptText="From Station">
+      <TextField fx:id="fromStation" layoutX="224.0" layoutY="211.0" prefHeight="25.0" prefWidth="316.0" promptText="From Station">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="toStation" layoutX="224.0" layoutY="270.0" prefHeight="25.0" prefWidth="316.0" promptText="To Station">
+      <TextField fx:id="toStation" layoutX="224.0" layoutY="286.0" prefHeight="25.0" prefWidth="316.0" promptText="To Station">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <JFXButton layoutX="224.0" layoutY="345.0" onAction="#onGetTrainsButtonClick" prefHeight="41.0" prefWidth="316.0" style="-fx-background-color: #000000;" text="Get Trains" textFill="WHITE">
+      <JFXButton layoutX="338.0" layoutY="332.0" onAction="#onGetTrainsButtonClick" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #000000;" text="Get Trains" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></JFXButton>
@@ -36,9 +36,9 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="302.0" layoutY="446.0" onAction="#onBookedTicketHistoryClick" prefHeight="35.0" prefWidth="228.0" text="Booked Ticket History">
+      <Hyperlink layoutX="585.0" layoutY="458.0" onAction="#onBookedTicketHistoryClick" prefHeight="35.0" prefWidth="170.0" text="Booked Ticket History">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Hyperlink>
    </children>

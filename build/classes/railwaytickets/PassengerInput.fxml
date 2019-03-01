@@ -14,7 +14,7 @@
    <children>
       <AnchorPane prefHeight="41.0" prefWidth="800.0" style="-fx-background-color: #000000;">
          <children>
-            <JFXButton layoutX="716.0" layoutY="7.0" onAction="#onSignOut" style="-fx-background-color: #FFFFFF;" text="Sign Out">
+            <JFXButton layoutX="709.0" layoutY="7.0" onAction="#onSignOut" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #FFFFFF;" text="Sign Out">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -26,12 +26,12 @@
             </Hyperlink>
          </children>
       </AnchorPane>
-      <Label layoutX="307.0" layoutY="49.0" text="Ticket information">
+      <Label layoutX="306.0" layoutY="47.0" text="Ticket information">
          <font>
             <Font name="Microsoft YaHei Light" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="107.0" text="Train No :">
+      <Label layoutX="11.0" layoutY="90.0" text="Train No :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -41,7 +41,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="139.0" text="Train Name :">
+      <Label layoutX="11.0" layoutY="122.0" text="Train Name :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -51,12 +51,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="649.0" layoutY="109.0" text="Departure :">
+      <Label layoutX="646.0" layoutY="92.0" text="Departure :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="649.0" layoutY="139.0" text="Arrival :">
+      <Label layoutX="646.0" layoutY="122.0" text="Arrival :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -71,12 +71,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="340.0" layoutY="108.0" text="From :">
+      <Label layoutX="337.0" layoutY="91.0" text="From :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="340.0" layoutY="139.0" text="To :">
+      <Label layoutX="337.0" layoutY="122.0" text="To :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -91,7 +91,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="170.0" text="Duration(hrs) :">
+      <Label layoutX="11.0" layoutY="153.0" text="Duration(hrs) :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -101,7 +101,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="334.0" layoutY="170.0" text="Date of Journey :">
+      <Label layoutX="331.0" layoutY="153.0" text="Date of Journey :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -111,36 +111,36 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="passengerTable" layoutX="229.0" layoutY="219.0" prefHeight="200.0" prefWidth="351.0">
+      <TableView fx:id="passengerTable" layoutX="228.0" layoutY="196.0" prefHeight="200.0" prefWidth="351.0">
         <columns>
           <TableColumn fx:id="passengerName" prefWidth="254.0" text="Passenger Name" />
           <TableColumn fx:id="passengerSex" minWidth="0.0" prefWidth="97.0" text="Sex" />
         </columns>
       </TableView>
-      <AnchorPane layoutX="10.0" layoutY="438.0" prefHeight="81.0" prefWidth="780.0" style="-fx-background-color: #E8E8E8;">
+      <AnchorPane layoutX="10.0" layoutY="451.0" prefHeight="81.0" prefWidth="780.0" style="-fx-background-color: #E8E8E8;">
          <children>
             <TextField fx:id="passengerNameInput" layoutX="25.0" layoutY="34.0" prefHeight="30.0" prefWidth="254.0" promptText="Passenger Name" />
             <ComboBox fx:id="passengerSexInput" layoutX="293.0" layoutY="34.0" prefHeight="30.0" prefWidth="97.0" promptText="Sex" />
-            <JFXButton fx:id="addButton" layoutX="610.0" layoutY="29.0" onAction="#addPassengers" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #0B9A17;" text="+" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="698.0" layoutY="28.0" onAction="#deletePassengers" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #E81123;" text="-" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </JFXButton>
             <Label layoutX="25.0" layoutY="5.0" text="Passenger details">
                <font>
                   <Font name="Microsoft PhagsPa" size="14.0" />
                </font>
             </Label>
+            <JFXButton fx:id="addButton" layoutX="402.0" layoutY="34.0" onAction="#addPassengers" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #0B9A17;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
          </children>
       </AnchorPane>
-      <JFXButton fx:id="confirmButton" layoutX="331.0" layoutY="536.0" onAction="#onConfirmButtonClick" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #000000;" text="Confirm" textFill="WHITE">
+      <JFXButton fx:id="confirmButton" layoutX="721.0" layoutY="554.0" onAction="#onConfirmButtonClick" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #000000;" text="Confirm" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="363.0" layoutY="402.0" onAction="#deletePassengers" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #E81123;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
          </font>
       </JFXButton>
    </children>

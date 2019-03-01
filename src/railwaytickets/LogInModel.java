@@ -21,12 +21,10 @@ public class LogInModel {
                 return true;
             } else {
                 GetAlert.showError("Incorrect Credentials. Please try again.");
-                return false;
             }
 
         } catch (SQLException e) {
             GetAlert.showError(e.toString());
-            return false;
         } finally {
 
             try {
@@ -41,6 +39,7 @@ public class LogInModel {
             }
 
         }
+        return false;
 
     }
 

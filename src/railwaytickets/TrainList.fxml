@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="800.0" stylesheets="@TrainList.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railwaytickets.TrainListController">
    <children>
-      <TableView fx:id="trainTable" layoutX="12.0" layoutY="101.0" prefHeight="318.0" prefWidth="777.0">
+      <TableView fx:id="trainTable" layoutX="12.0" layoutY="118.0" prefHeight="318.0" prefWidth="777.0">
         <columns>
           <TableColumn fx:id="trainNo" prefWidth="59.0" text="Train No" />
           <TableColumn fx:id="durationInHours" prefWidth="42.0" text="Hours" />
@@ -35,8 +35,8 @@
             </Hyperlink>
          </children>
       </AnchorPane>
-      <JFXDatePicker fx:id="dateofJourney" defaultColor="BLACK" layoutX="618.0" layoutY="58.0" promptText="Date of Journey" />
-      <JFXButton fx:id="bookATicket" layoutX="283.0" layoutY="456.0" onAction="#onBookATicketButtonClick" prefHeight="41.0" prefWidth="235.0" style="-fx-background-color: #000000;" text="Book Ticket" textFill="WHITE">
+      <JFXDatePicker fx:id="dateofJourney" defaultColor="BLACK" layoutX="586.0" layoutY="62.0" promptText="Date of Journey" />
+      <JFXButton fx:id="bookATicket" layoutX="724.0" layoutY="476.0" onAction="#onBookATicketButtonClick" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #000000;" text="Book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
